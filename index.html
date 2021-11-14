@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+      <title>Sound Identification Web App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+          <div class="col-xs-12 header">
+  <h1>animal recognization</h1>
+  <p>Is it a dog? A cat? You're goign crazy and it's actually nothing? Let's figure out! Background noise included!</p></div>
+  <div class="maindiv">
+  <span id="aliens">
+    <center>
+    <img src="A-Dog-Smiling-678x381.jpg" height="300" width="300" id="alien-1">
+    <img src="smiling cat.jpg" height="300" width="300" id="alien-2">
+  </span>
+  <hr>
+  <Span><button id="identify-button" class="btn btn-info" onclick="start()">Identify noise</button><hr> <label>Noise is:</label><label id="object"></label></Span>
+  <hr>
+  <Span><button id="accuracy-button" class="btn btn-info" onclick="accuracy()">Accuracy of noise</button> <hr> <label>Accuracy percentage:</label><label id="accuracy"></label></Span>
+  </center></div>
+  <div class="footer" id="footer">
+    Developed by Amy Kaye
+  </div>
+  <script src="main.js"></script>
+    </body>
+  </html>
